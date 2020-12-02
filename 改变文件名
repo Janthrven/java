@@ -3,11 +3,16 @@ import java.io.File;
 
 public class MyFirstProgram
 {   public static void main( String[] args)
-   {       System.out.println("学号姓名调试的的第一个应用程序");
+   {
+System.out.println("学号姓名调试的的第一个应用程序"); 
+//文件路径以及原名：
    File file=new File("E:\\上机1\\18软工x班xx号xxx上机报告1.doc");
+//下面这句表示如果文件已经退出打开
    if(file.exists())
    {
+//不改变文件路径，重新命名
    file.renameTo(new File("E:\\上机1\\18软工6班39号严子浩上机报告1.doc"));
    }
    } 
 }
+
